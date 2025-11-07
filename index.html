@@ -3,9 +3,64 @@
 <head>
     <title>Калькулятор кухонных вещей</title>
     <script defer src="functions.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование по горизонтали */
+            justify-content: center; /* Центрирование по вертикали */
+            min-height: 100vh; /* Чтобы центрирование работало по всей высоте экрана */
+            margin: 0;
+            font-size: 18px; /* Увеличение базового размера шрифта */
+        }
+        
+        h1 {
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 2.5em; /* Увеличение шрифта заголовка */
+            text-align: center;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрирование элементов формы */
+            width: 100%;
+            max-width: 500px; /* Ограничение ширины формы */
+        }
+        
+        .radiobutton, #sel, #ch, #result {
+            text-align: center;
+            width: 100%;
+            margin: 10px 0;
+            font-size: 1.2em; /* Увеличение шрифта */
+        }
+        
+        input[type="text"], select, button {
+            font-size: 1.1em; /* Увеличение шрифта в полях ввода и кнопках */
+            padding: 8px;
+            margin: 5px;
+        }
+        
+        h3 {
+            font-size: 1.5em; /* Увеличение шрифта заголовка стоимости */
+            text-align: center;
+        }
+        
+        .check {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        label {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+    </style>
 </head>
-<body style="display: flex; flex-direction: column;">
-    <h1 style="margin-left: auto; margin-right: auto;">Задание 6</h1>
+<body>
+    <h1>Задание 6</h1>
     <form>
         <input name="field1" type="text">
         <button id="button1" onclick="return click1();">OK</button>
